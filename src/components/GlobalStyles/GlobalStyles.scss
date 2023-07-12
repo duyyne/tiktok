@@ -1,0 +1,42 @@
+@import 'normalize.css';
+
+:root {
+    --primary: #fe2c55;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #fff;
+}
+
+// Fonts emmbeded
+@font-face {
+    font-family: TikTokFont;
+    src: url('/assets/fonts/TikTokFont-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: TikTokFont;
+    src: url('/assets/fonts/TikTokFont-Semibold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: TikTokFont;
+    src: url('/assets/fonts/TikTokFont-Bold.woff2');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'TikTokFont';
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}

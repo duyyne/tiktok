@@ -1,0 +1,95 @@
+.search-area {
+    width: 500px;
+    height: 46px;
+    padding: 12px 16px;
+    margin: 0 8px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border: 1.5px solid transparent;
+    border-radius: 92px;
+    position: relative;
+    display: flex;
+
+    .search-input {
+        width: 391px;
+        height: 22px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+        line-height: 21px;
+        letter-spacing: 0.03px;
+        color: rgba(22, 24, 35, 1);
+        caret-color: var(--primary);
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .clear-btn,
+    .loading {
+        font-size: 16px;
+        color: rgb(167 167 171);
+        border: none;
+        outline: none;
+    }
+
+    .loading {
+        display: none;
+    }
+
+    .clear-btn {
+        width: 40px;
+        height: 15.67px;
+        border: none;
+        align-items: center;
+        margin-top: 3px;
+    }
+
+    .search-btn {
+        color: rgb(167 167 171);
+        padding: 8px 16px 8px 12px;
+        margin: -12px -24px -12px 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: absolute;
+        right: 24.5px;
+
+        &::before {
+            content: '';
+            top: 9px;
+            left: 0;
+            width: 1px;
+            height: 28px;
+            background-color: rgba(0, 0, 0, 0.12);
+            position: absolute;
+        }
+    }
+
+    &:hover {
+        .search-btn {
+            color: rgb(22, 24, 35);
+            background-color: rgb(228 228 230);
+            border-top-right-radius: 92px;
+            border-bottom-right-radius: 92px;
+        }
+
+        border: 1.5px solid rgb(197 198 201);
+    }
+
+    &:focus-within {
+        border: 1.5px solid rgb(197 198 201);
+    }
+}
+
+.search-result {
+    .title {
+        width: 500px;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgba(22, 24, 35, 0.5);
+        line-height: 18px;
+        letter-spacing: 0.093px;
+        padding: 5px 12px;
+    }
+}
